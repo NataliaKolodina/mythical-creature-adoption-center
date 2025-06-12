@@ -35,7 +35,7 @@ mythical-creature-adoption-center/
 │   ├── images/              # All images (magical landscape, creatures, etc.)
 │   ├── audio/               # Welcome music or sound
 │   └── video/               # Magical journey clip
-└── README.md                # Project documentation
+└── README.md                # Project documentation ```
 
 ## 📄 Features Implemented
 
