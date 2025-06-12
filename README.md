@@ -20,7 +20,7 @@ This is a final project developed as part of a front-end development course. It 
 ## 🛠️ Technologies Used
 
 - **HTML5** – Semantic structure, form elements, multimedia embedding
-- **CSS3** *(optional in extended version)* – Styling and layout (not part of this task but can be added)
+- **CSS3**  – Styling and layout (not part of this task but can be added)
 - **Git & GitHub** – Version control and deployment
 
 ---
