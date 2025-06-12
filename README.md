@@ -27,7 +27,7 @@ This is a final project developed as part of a front-end development course. It 
 
 ## 📂 Project Structure
 
-```text
+```
 mythical-creature-adoption-center/
 ├── index.html               # Main HTML file
 ├── submit_adoption.html    # Form submission landing page (placeholder)
@@ -35,7 +35,8 @@ mythical-creature-adoption-center/
 │   ├── images/              # All images (magical landscape, creatures, etc.)
 │   ├── audio/               # Welcome music or sound
 │   └── video/               # Magical journey clip
-└── README.md                # Project documentation ```
+└── README.md                # Project documentation
+```
 
 ## 📄 Features Implemented
 
