@@ -1,0 +1,459 @@
+@import url("https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+a {
+  text-decoration: none;
+}
+
+button {
+  background-color: transparent;
+  background-repeat: no-repeat;
+  border: none;
+  cursor: pointer;
+  overflow: hidden;
+  outline: none;
+}
+
+.container {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+ul {
+  list-style-type: none;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+body {
+  background-color: #1a1a2e;
+}
+
+.header,
+.footer {
+  background: linear-gradient(
+    to bottom,
+    rgba(119, 39, 180, 0.891) 0%,
+    #1a1a2e 100%
+  );
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+}
+
+.header__title {
+  color: white;
+  font-family: "Cinzel Decorative", "Open Sans", sans-serif;
+  padding: 20px 0;
+  font-size: 40px;
+  text-align: center;
+}
+
+.header__menu {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding-bottom: 20px;
+}
+
+.header__menu a,
+.footer__link {
+  color: #b0bec5;
+}
+
+.header__menu a:hover,
+.footer__link:hover {
+  color: #ffd369;
+  text-shadow: 0 0 8px #b288ff, 0 0 12px #d2b1ff;
+}
+
+.home__center {
+  padding-bottom: 48px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.section__title,
+.home__figure figcaption {
+  font-family: "Cinzel Decorative", cursive;
+  font-size: 2.5rem;
+  color: #e0d4ff;
+  text-align: center;
+  padding: 40px;
+  animation: fadeInUp 2s ease-out forwards;
+  text-shadow: 0 0 10px #a56bff, 0 0 20px #7a3cff;
+}
+
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.home__text {
+  font-family: Inter, "Open Sans";
+  color: #b0bec5;
+  text-align: center;
+}
+
+.media-card {
+  background-color: rgba(255, 255, 255, 0.05);
+  padding: 1rem;
+  margin: 1rem 0;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(4px);
+  max-width: 600px;
+}
+
+.media-card:hover {
+  background-color: #ffd26974;
+  text-shadow: 0 0 8px #b288ff, 0 0 12px #d2b1ff;
+  box-shadow: 0 0 20px #d2b1ff;
+}
+
+.figure__video figcaption {
+  font-family: Inter, "Open Sans";
+  color: #b0bec5;
+  margin-top: -10px;
+  text-align: center;
+}
+
+.section-divider {
+  height: 2px;
+  background: linear-gradient(to right, transparent, #b288ff 50%, transparent);
+  box-shadow: 0 0 12px #d2b1ff;
+  margin: 60px 0;
+}
+
+#home,
+#adopt,
+#creatures,
+#faq {
+  padding-bottom: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.section__title {
+  font-size: 2rem;
+}
+
+.adopt__form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  width: 100%;
+  max-width: 500px;
+  background-color: #2c2c54;
+  border-radius: 20px;
+  font-family: "Segoe UI", sans-serif;
+  color: #fff;
+  padding: 2rem;
+}
+
+.adopt__form:hover {
+  box-shadow: 0 0 20px #d2b1ff;
+}
+
+.adopt__item {
+  display: flex;
+  flex-direction: column;
+
+  gap: 10px;
+  width: 100%;
+}
+
+.adopt__item-big {
+  padding: 10px;
+}
+
+.adopt__label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+  color: #ccc;
+  font-size: 20px;
+}
+
+.adopt__input {
+  width: 100%;
+  padding: 0.75rem 1rem;
+  background-color: transparent;
+  border: 2px solid #555;
+  border-radius: 8px;
+  color: #fff;
+  outline: none;
+  font-size: 1rem;
+  transition: border 0.3s, box-shadow 0.3s;
+}
+
+.adopt__input:focus {
+  border-color: #9f7aea;
+  box-shadow: 0 0 8px #9f7aea;
+}
+
+.adopt__option {
+  color: #1a1a2e;
+}
+
+.range-wrapper {
+  position: relative;
+  width: 100%;
+}
+
+.adopt__range {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 100%;
+  height: 8px;
+  background: linear-gradient(90deg, #c77dff, #ffd369);
+  border-radius: 10px;
+  outline: none;
+  box-shadow: 0 0 10px rgba(199, 125, 255, 0.5);
+  transition: background 0.3s ease;
+}
+
+.adopt__range::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 22px;
+  height: 22px;
+  background: #ffd369;
+  border: 2px solid #c77dff;
+  border-radius: 50%;
+  cursor: pointer;
+  box-shadow: 0 0 10px #ffd369;
+  transition: transform 0.2s ease;
+}
+
+.adopt__range::-webkit-slider-thumb:hover {
+  transform: scale(1.2);
+}
+
+.adopt__range::-moz-range-thumb {
+  width: 22px;
+  height: 22px;
+  background: #ffd369;
+  border: 2px solid #c77dff;
+  border-radius: 50%;
+  cursor: pointer;
+  box-shadow: 0 0 10px #ffd369;
+  transition: transform 0.2s ease;
+}
+
+.adopt__range::-moz-range-thumb:hover {
+  transform: scale(1.2);
+}
+
+.range-value {
+  margin-top: 8px;
+  color: #ffd369;
+  font-size: 1rem;
+  font-weight: bold;
+  text-align: right;
+}
+
+.adopt__item input[type="checkbox"],
+.adopt__item input[type="radio"] {
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  border: 2px solid #c77dff;
+  border-radius: 4px;
+  background-color: transparent;
+  margin-right: 10px;
+  position: relative;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  vertical-align: middle;
+}
+
+.adopt__item input[type="radio"] {
+  border-radius: 50%;
+}
+
+.adopt__item input[type="checkbox"]:checked,
+.adopt__item input[type="radio"]:checked {
+  background-color: #ffd369;
+  box-shadow: 0 0 8px #ffd369;
+  border-color: #ffd369;
+}
+
+.adopt__item label {
+  color: #ccc;
+  font-size: 20px;
+  margin-right: 20px;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.adopt__btn {
+  font-family: "Cinzel Decorative", cursive;
+  width: 300px;
+  margin-top: 1rem;
+  padding: 1rem 2rem;
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #2e003e;
+  background: linear-gradient(90deg, #c77dff, #ffd369);
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  box-shadow: 0 0 10px #c77dff;
+  transition: transform 0.2s ease, box-shadow 0.3s ease;
+}
+
+.adopt__btn:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 14px #ffd369;
+}
+
+.creatures__table {
+  font-family: Inter, "Open Sans";
+  background-color: #2c2c54;
+  margin-top: 64px;
+  margin-bottom: 132px;
+}
+
+.creatures__table tbody tr:hover {
+  background-color: rgba(255, 211, 105, 0.15);
+  box-shadow: 0 0 12px #ffd369;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.creatures__tr th,
+.creatures__foot td {
+  color: #ffd369;
+  font-size: 24px;
+  text-shadow: 0 0 8px #b288ff, 0 0 12px #d2b1ff;
+  padding: 20px;
+}
+
+.creatures__tr td {
+  color: #b0bec5;
+  font-size: 20px;
+  text-align: center;
+  padding: 10px 20px;
+}
+
+.faq__list {
+  padding-bottom: 160px;
+}
+
+.faq__text strong {
+  color: #ffd369;
+  font-size: 24px;
+  text-shadow: 0 0 8px #b288ff, 0 0 12px #d2b1ff;
+  padding: 20px;
+}
+
+.faq__text {
+  color: #b0bec5;
+  font-size: 20px;
+  padding: 10px 20px;
+}
+
+.faq__text a {
+  color: #b288ff;
+}
+
+.faq__text a:hover {
+  color: #ffd369;
+  text-shadow: 0 0 8px #b288ff, 0 0 12px #d2b1ff;
+}
+
+.footer__link {
+  font-family: "Cinzel Decorative", cursive;
+  font-weight: bold;
+  font-size: 24px;
+}
+
+.footer__text {
+  color: #b0bec5;
+  font-size: 16px;
+}
+
+@media (max-width: 1024px) {
+  .container {
+    max-width: 736px;
+  }
+
+  .home__figure figcaption {
+    font-size: 48px;
+  }
+
+  .section__title {
+    font-size: 36px;
+  }
+  .creatures__table {
+    margin-top: 96px;
+    margin-bottom: 200px;
+  }
+
+  #creatures {
+    padding-top: 36px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 54px;
+  }
+}
+
+@media (max-width: 767px) {
+  .container {
+    max-width: 359px;
+  }
+
+  .media-card {
+    max-width: 350px;
+  }
+
+  .creatures__tr th,
+  .creatures__foot td {
+    font-size: 16px;
+    padding: 12px 8px;
+  }
+
+  .creatures__tr td {
+    font-size: 14px;
+    padding: 8px;
+  }
+
+  .creatures__table {
+    margin-top: 32px;
+    margin-bottom: 64px;
+  }
+
+  .footer__link {
+    font-size: 16px;
+  }
+
+  .footer__text {
+    font-size: 8px;
+  }
+}
